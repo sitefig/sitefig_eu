@@ -1,0 +1,143 @@
+---
+title: Sitefig
+layout: layouts/home.njk
+---
+{% block body %}
+<div class="hero">
+  <div class="-z-10 absolute md:right-10 md:top-10" style="opacity:8%;">
+    <img src="img/wasp_robot_bg.svg"/>
+  </div>
+
+  <h1 class="h1 text-center text-secondary font-sans font-bold mt-10 py-4">
+    Continuous UX monitoring and auditing for large websites
+  </h1>
+  <h2 class="h2 text-center mx-0 lg:mx-44 py-4">Sitefig is SaaS platform helping businesses manage their
+    websites.<br/>
+    Automatically tests your website for <strong>UX issues</strong> (contrast, screenshots, images),
+    <strong>compliance</strong> (Accessibility and GDPR),
+    <strong>performance</strong> (Core web vitals), <strong>code</strong> errors (Javascript errors, html issues,
+    broken links)
+    while taking care your <strong>Content and SEO</strong> efforts actually pay off.</h2>
+
+</div>
+<h3 class="text-center text-cyan bg-white rounded shadow mt-10 mb-10 lg:mx-48 p-6 font-sans font-bold">
+  Saves 90% of your time testing websites!
+</h3>
+<div class="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-4">
+
+  <div class="card hover:shadow-lg">
+    <h4 class="text-center">Flawless websites and UX</h4>
+    <div>
+      {% image "./img/main-screen.png", "Dashboard for Sitefig" %}
+      <h5><a class="underline text-info" href="/automated-quality-control">Automate quality control with Sitefig</a>
+      </h5>
+      <p class="text-sm">Getting a website online and working takes a lot of testing.</p>
+      <p class="text-sm">Sitefig helps you focus on what matters and <span class="strong">reduces your teams testing effort</span>.
+      </p>
+
+    </div>
+  </div>
+
+  <div class="card hover:shadow-lg">
+    <h4 class="text-center">Continuous and on-demand</h4>
+    <div>
+      {% image "./img/continuous-on-demand-crawls.png", "Continuous and on-demand crawls" %}
+      <h5>Monthly, weekly and on-demand crawling</h5>
+      <p class="text-sm">Automatic and scheduled crawls with <span class="strong">private containers</span>.</p>
+      <p class="text-sm">Start an on-demand crawl when a new website is ready, <span
+          class="strong">no waiting inline</span>.</p>
+    </div>
+  </div>
+  <div class="card hover:shadow-lg">
+    <h4 class="text-center">Get compliant, stay compliant</h4>
+    <div>
+      {% image "./img/compliant.png", "Get compliant, stay compliant" %}
+      <h5>WCAG Accessibility compliance</h5>
+      <p class="text-sm">Everyone benefits from making your website more accessible.</p>
+      <p class="text-sm"><span class="strong">Accessibility is user experience</span>, and Sitefig provides you with all
+        the tools to ensure all
+        pages are <span class="strong">WCAG compliant</span>.</p>
+
+    </div>
+  </div>
+
+
+</div>
+
+<div class="text-center bg-white rounded shadow mt-10 mb-10 lg:mx-64 p-6 font-sans font-bold">
+  <figure class="">
+    <img src="img/mozilla-matjas.jpg" class="max-h-32 inline rounded-full"/>
+    <blockquote class="text-purple">
+      Sitefig is so far ahead in terms of error detection.
+    </blockquote>
+    <figcaption>
+      <span class="text-txt">Matjas Horvat</span>
+      <cite class="text-txt text-sm">
+        <a href="https://www.mozilla.si/author/matjaz-horvat/">
+          Software engineer at moz://a - Mozilla
+        </a>
+      </cite>
+    </figcaption>
+  </figure>
+  <blockquote></blockquote>
+
+</div>
+
+<div class="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-4">
+
+  <div class="card hover:shadow-lg">
+    <h4 class="text-center">GDPR issues for your DPO</h4>
+    <div>
+      <img src="/img/main-screen.png"/>
+      <h5>Stop worrying about data privacy and GDPR issues.</h5>
+      <p class="text-sm">Sitefig monitors your website for <span class="strong">trackers, cookies, geo-tracking</span>
+        of IPs across the globe,
+        and <span class="strong">PII tools</span> to ensure you are not leaking any data.</p>
+
+    </div>
+  </div>
+
+  <div class="card hover:shadow-lg">
+    <h4 class="text-center">Core web metrics</h4>
+    <div>
+      <img src="/img/main-screen.png"/>
+      <h5>Updated Lighthouse lab data.</h5>
+      <p class="text-sm">Lighthouse is an <span class="strong">integrated part of the WASP crawler</span> and Sitefig
+        runs Lighthouse in separated containers with guaranteed resources.</p>
+
+    </div>
+  </div>
+
+
+  <div class="card hover:shadow-lg">
+    <h4 class="text-center">Effortless project management</h4>
+    <div>
+      <img src="/img/main-screen.png"/>
+      <h5>Integrate your ticketing solution</h5>
+      <p class="text-sm">Create <span class="strong">developer friendly tickets</span> straight from the audits.</p>
+      <p class="text-sm">Tickets include <span class="strong">source code, documentation and the pages to fix</span>.
+      </p>
+
+    </div>
+  </div>
+</div>
+
+</section>
+<section><div class="bg-white rounded shadow mt-10 mb-10 lg:mx-64 p-6">
+  <h1 class="text-primary text-3xl font-bold pb-6 font-sans">What makes Sitefig special?</h1>
+  <p class="leading-relaxed pb-3">It is build by people who have managed websites for large international companies, build
+    national portals <strong>used by millions of people</strong>.</p>
+    <p class="leading-relaxed pb-3">Sitefig was build for <strong>large websites</strong> and all the issues that come with scaled up websites.</p>
+  <p class="leading-relaxed pb-3">Web teams are limited in resources and time, just like you and me. <br/>
+    And building an automated checklist also takes time.</p>
+    <p class="leading-relaxed pb-3">Sitefig solves all those issues and <strong>scans every page for any website you like</strong>, while being
+    extremely error tolerant so you can be sure that any errors on your website are picked up.</p>
+    <p>Sitefig verifies Core web vitals, Accessibility, code quality and GDPR compliance as well as broken links or missing resources. </p>
+    <p class="leading-relaxed pb-3">There is absolutely no set up needed, <a class="underline text-info" href="https://app.sitefig.eu/accounts/signup/">just give it a try</a></p>
+  </div></section>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,43 @@
+---
+eleventyNavigation:
+  key: Pricing
+  order: 1
+---
+{% extends 'layouts/base.njk' %}
+{% block head %}
+  <script src="https://js.stripe.com/v3/"></script>
+  <script>
+    var stripe = Stripe('pk_test_51IoiveHN9pm6GzKZRKy53Tf2fAKKNMYiz5QXqwM7ymJxsqFfB2apVbLzMYqJKEahf8w2Thm8EsixHoNUByJGE2Cv00KKcmuwqU');
+
+  const {error} = stripe.redirectToCheckout({
+    lineItems: [{
+      price: '{{PRICE_ID}}', // Replace with the ID of your price
+      quantity: 1,
+    }],
+    mode: 'payment',
+    successUrl: 'http://localhost:8080/success',
+    cancelUrl: 'http://localhost:8080/cancel',
+  })
+
+  </script>
+{% endblock %}
+
+{% block body %}
+
+<div class="hero">
+  <h1 class="h1 text-center text-secondary font-sans font-bold py-4">
+    Pricing
+
+  </h1>
+  <h2 class="h2 text-center mx-0 lg:mx-44 py-4">
+    Enterprise value, without the price tag.
+  </h2>
+</div>
+
+<div class="md:grid md:grid-cols-1 lg:grid-cols-3 md:gap-6 lg:gap-8 mt-10">
+
+  {% set pricing = pricing.plans %}
+  {% include "./_includes/partials/plan.njk" %}
+
+</div>
+{% endblock %}

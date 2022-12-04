@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    #Iframe {
+      border: 3px dotted;
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+
+  <script>
+    window.onload = function () {
+      var x = document.getElementById("iframe1");
+      var doc = x.contentDocument
+      // Create a link Element
+      // for the css file
+      var link = doc.createElement("link");
+
+      // Set the attributes
+      // for link element
+      link.href = "/css/index.css";
+      link.rel = "stylesheet";
+      link.type = "text/css";
+
+      // Set the link element at the
+      // 'head' of HTML document
+      doc.head.appendChild(link);
+    }
+  </script>
+</head>
+
+<body>
+<h4 style="color:#006400;
+        font-size:24px;">
+  Apply CSS to iframe
+</h4>
+
+<iframe src="iframe_page.html"
+        id="iframe1">
+</iframe>
+<!--iframe tag-->
+</body>
+
+</html>
