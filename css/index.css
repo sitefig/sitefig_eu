@@ -90,6 +90,7 @@
 
   h3 {
     @apply text-2xl;
+    @apply leading-loose;
   }
 
   .h4, h4 {
