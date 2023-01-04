@@ -29,7 +29,7 @@ module.exports = function (eleventyConfig) {
     alt,
     className = 'feature',
     widths = [300, 600],
-    formats = ['png', 'webp'],
+    formats = ['webp','png'],
     sizes = '100vw'
   ) => {
     const imageMetadata = await Image(src, {
@@ -64,7 +64,7 @@ module.exports = function (eleventyConfig) {
       return images[images.length - 1];
     }
 
-    const largestUnoptimizedImg = getLargestImage(formats[0]);
+    const largestUnoptimizedImg = getLargestImage(formats[formats.length -1]);
     const imgAttributes = stringifyAttributes({
       src: largestUnoptimizedImg.url,
       width: largestUnoptimizedImg.width,
