@@ -72,6 +72,10 @@
     font-size: 20px;
   }
 
+  .feature img{
+    border:1px solid #ccc;
+  }
+
 
   .hero .h1 {
     @apply text-3xl;

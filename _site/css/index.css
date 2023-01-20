@@ -423,6 +423,10 @@ html {
   font-size: 20px;
 }
 
+.feature img{
+  border:1px solid #ccc;
+}
+
 .hero .h1 {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -735,9 +739,9 @@ strong {
   margin-bottom: 3.5rem;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .mx-0 {
@@ -748,11 +752,6 @@ strong {
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
-}
-
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 
 .-mt-1 {
@@ -1257,16 +1256,16 @@ strong {
     gap: 1rem;
   }
 
+  .md\:gap-2 {
+    gap: 0.5rem;
+  }
+
   .md\:gap-6 {
     gap: 1.5rem;
   }
 
   .md\:gap-1 {
     gap: 0.25rem;
-  }
-
-  .md\:gap-2 {
-    gap: 0.5rem;
   }
 
   .md\:rounded {
@@ -1332,12 +1331,12 @@ strong {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .lg\:gap-8 {
-    gap: 2rem;
-  }
-
   .lg\:gap-4 {
     gap: 1rem;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 }
 
