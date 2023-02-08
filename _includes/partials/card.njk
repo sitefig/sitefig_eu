@@ -1,9 +1,12 @@
-<div class="shadow rounded border-secondary bg-white p-2">
- <h4 class="p-3 text-center">{{title}}}</h4>
-<div>
-<img src="/img/main-screen.png" />
-<h5><a class="underline text-info" href="/scheduled-crawling">{{sub_title}}}</a></h5>
-<p>{{p1}}}</p>
-<p>{{p2}}}</p>
+{% for name, feature in features.main %}
+<div class="card hover:shadow-lg" tabindex="0">
+  <h4 class="text-center">{{  feature.title }}</h4>
+  <div><a href="{{ feature.link }}">
+      {% image feature.img.path,feature.img.alt %}
+    </a>
+    <h5><a class="underline text-info" href="{{ feature.link }}">{{ feature.sub }}</a></h5>
+    <p class="text-sm">{{ feature.p1|safe }}</p>
+    <p class="text-sm">{{ feature.p2|safe }}</p>
+  </div>
 </div>
-</div>
+{%  endfor %}

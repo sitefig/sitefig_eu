@@ -72,7 +72,11 @@
     font-size: 20px;
   }
 
-  .feature img{
+  :focus-visible, a:focus img {
+    outline: 2px dashed #A04BE8;
+  }
+
+  .card .feature img{
     border:1px solid #ccc;
   }
 

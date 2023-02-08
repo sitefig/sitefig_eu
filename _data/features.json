@@ -1,0 +1,72 @@
+{
+  "main": {
+    "ux": {
+      "title": "Flawless websites and UX",
+      "link": "/automated-quality-control",
+      "sub": "Automate quality control with Sitefig",
+      "p1": "Getting a website online and working takes a lot of testing.",
+      "p2": "Sitefig helps you focus on what matters and <span class=\"strong\">reduces your teams testing effort</span>.",
+      "img": {
+        "path": "./img/main-screen.png",
+        "alt": "Dashboard for Sitefig"
+      }
+    },
+    "monitor": {
+      "title": "Continuous monitoring",
+      "link": "/regular-website-monitoring",
+      "sub": "Monthly, weekly and on-demand crawling",
+      "p1": "Automatic and scheduled crawls with <span class=\"strong\">private containers</span>.",
+      "p2": "Start an on-demand crawl when a new website is ready, <span class=\"strong\">no waiting inline</span>.",
+      "img": {
+        "path": "./img/continuous-on-demand-crawls.png",
+        "alt": "Continuous and on-demand crawls"
+      }
+    },
+    "compliant": {
+      "title": "Get compliant, stay compliant",
+      "link": "/web-accessibility",
+      "sub": "WCAG Accessibility compliance",
+      "p1": "Everyone benefits from making your website more accessible.",
+      "p2": "<span class=\"strong\">Accessibility is user experience</span>, and Sitefig provides you with all the tools to ensure all pages are <span class=\"strong\">WCAG compliant</span>.",
+      "img": {
+        "path": "./img/compliant.png",
+        "alt": "Get compliant, stay compliant"
+      }
+    }
+  },
+  "second": {
+    "privacy": {
+      "title": "GDPR issues for your DPO",
+      "link": "/privacy-gdpr",
+      "sub": "Stop worrying about data privacy and GDPR issues.",
+      "p1": "Sitefig monitors your website for <span class=\"strong\">trackers, cookies, geo-tracking</span> of IPs across the globe, and <span class=\"strong\">PII tools</span> to ensure you are not leaking any data.",
+      "p2": false,
+      "img": {
+        "path": "./img/privacy.png",
+        "alt": "Dashboard for Privacy and GDPR"
+      }
+    },
+    "coreweb": {
+      "title": "Core web metrics",
+      "link": "/core-web-metrics",
+      "sub": "Updated Lighthouse lab data.",
+      "p1": "Lighthouse is an integrated part of the WASP crawler and Sitefig runs Lighthouse in separated containers with guaranteed resources.",
+      "p2": false,
+      "img": {
+        "path": "./img/webcoremetrics.png",
+        "alt": "Dashboard for core web metrics"
+      }
+    },
+    "project": {
+      "title": "Effortless project management\n",
+      "link": "/project-management",
+      "sub": "Integrate your ticketing solution\n",
+      "p1": "Create developer friendly tickets straight from the audits.",
+      "p2": "Tickets include source code, documentation and the pages to fix.",
+      "img": {
+        "path": "./img/privacy.png",
+        "alt": "Dashboard for core web metrics"
+      }
+    }
+  }
+}

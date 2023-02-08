@@ -1,0 +1,14 @@
+{% for name, feature in features.second %}
+  <div class="card hover:shadow-lg" tabindex="0">
+    <h4 class="text-center">{{ feature.title }}</h4>
+    <div><a href="{{ feature.link }}">
+        {% image feature.img.path,feature.img.alt %}
+      </a>
+      <h5><a class="underline text-info" href="{{ feature.link }}">{{ feature.sub }}</a></h5>
+      <p class="text-sm">{{ feature.p1|safe }}</p>
+      {% if feature.p2 %}
+        <p class="text-sm">{{ feature.p2|safe }}</p>
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}
