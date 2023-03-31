@@ -1,13 +1,13 @@
 {% for name, plan in pricing %}
 <div class="plan text-secondary {% if name != "Pro" %}mt-10 round-xl{% endif %}">
   <div class="md:grid md:grid-cols-4 md:gap-1 lg:grid-cols-1 relative">
-    <div class="hidden absolute -top-16 right-0 sm:block w-36">
+    <div class="hidden absolute {% if name == "Enterprise" %}-top-28{% else %}-top-20{% endif %} right-0 sm:block w-36">
       {%  image  plan.img,plan.alt %}
     </div>
-    <div class="col-span-2">
+    <div class="md:col-span-6 lg:col-span-2">
       <div class="title font-small">{{ name }}</div>
       <div class="price {% if name == "Pro" %}mb-2{% endif %}"><h3 class="font-sans font-semibold text-4xl">€{{ plan.price }}<small class="text-gray-500 text-sm font-light">/per
-            month</small></h3>
+            {{ plan.time_unit }}(or {% if plan.time_unit == "month" %}<a class="underline" href="/pricing-yearly">yearly</a>{% else %}<a class="underline" href="/pricing">monthly</a>{% endif %})</small></h3>
       </div>
 
       {% if name == "Pro" %}
@@ -15,8 +15,10 @@
       {% endif %}
 
     </div>
-    <div class="rounded-lg bg-secondary text-center mx-3">
-      <a href="mailto:support@sitefig.eu" class="text-white block">Get started</a>
+    <div class="md:col-span-6">
+    <div class="rounded-lg bg-secondary text-center mx-3 col">
+      <a href="https://app.sitefig.eu/signup/{{plan.lookup_id}}" class="text-white block">Start free trial</a>
+    </div>
     </div>
   </div>
 

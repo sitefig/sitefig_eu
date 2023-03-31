@@ -1,10 +1,10 @@
 {% for name, feature in features.main %}
 <div class="card hover:shadow-lg" tabindex="0">
-  <h4 class="text-center">{{  feature.title }}</h4>
+  <h3 class="h4 text-center">{{  feature.title }}</h3>
   <div><a href="{{ feature.link }}">
       {% image feature.img.path,feature.img.alt %}
     </a>
-    <h5><a class="underline text-info" href="{{ feature.link }}">{{ feature.sub }}</a></h5>
+    <h4 class="h5"><a class="underline text-info" href="{{ feature.link }}">{{ feature.sub }}</a></h4>
     <p class="text-sm">{{ feature.p1|safe }}</p>
     <p class="text-sm">{{ feature.p2|safe }}</p>
   </div>

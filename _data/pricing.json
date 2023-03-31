@@ -1,9 +1,10 @@
 {
   "plans": {
     "Basic": {
+      "time_unit": "month",
       "img": "img/fig.svg",
       "alt": "Basic package",
-      "price": 49,
+      "price": 39,
       "crawling_budget": "3.000",
       "lookup_id": "basic-monthly",
       "websites": 2,
@@ -22,9 +23,10 @@
       ]
     },
     "Pro": {
+      "time_unit": "month",
       "img": "img/wasp.svg",
       "alt": "Basic package",
-      "price": 249,
+      "price": 149,
       "websites": 5,
       "crawling_budget": "20.000",
       "lookup_id": "pro-monthly",
@@ -43,12 +45,80 @@
       ]
     },
     "Enterprise": {
+      "time_unit": "month",
       "img": "img/hive.svg",
       "alt": "Basic package",
-      "price": 949,
+      "price": 799,
       "websites": 10,
       "crawling_budget": "80.000",
-      "lookup_id": "enterprise-monthly",
+      "lookup_key": "enterprise-monthly",
+      "freq": "Weekly",
+      "ondemand": 6,
+      "support": "Support portal",
+      "active_modules": [
+        "SEO",
+        "Content",
+        "Code",
+        "Performance",
+        "Privacy",
+        "Accessibility"
+      ],
+      "excluded_modules": []
+    }
+  },
+  "yearly": {
+    "Basic": {
+      "time_unit": "year",
+      "img": "img/fig.svg",
+      "alt": "Basic package",
+      "price": 390,
+      "crawling_budget": "3.000",
+      "lookup_id": "basic-yearly",
+      "websites": 2,
+      "freq": "Monthly",
+      "ondemand": 1,
+      "support": "Documentation, Chat",
+      "active_modules": [
+        "SEO",
+        "Content",
+        "Code",
+        "Performance"
+      ],
+      "excluded_modules": [
+        "Privacy",
+        "Accessibility"
+      ]
+    },
+    "Pro": {
+      "time_unit": "year",
+      "img": "img/wasp.svg",
+      "alt": "Basic package",
+      "price": 1490,
+      "websites": 5,
+      "crawling_budget": "20.000",
+      "lookup_id": "pro-yearly",
+      "freq": "Weekly",
+      "ondemand": 3,
+      "support": "Documentation, Chat",
+      "active_modules": [
+        "SEO",
+        "Content",
+        "Code",
+        "Performance",
+        "Privacy"
+      ],
+      "excluded_modules": [
+        "Accessibility"
+      ]
+    },
+    "Enterprise": {
+      "time_unit": "year",
+      "img": "img/hive.svg",
+      "alt": "Basic package",
+      "price": 7990,
+      "websites": 10,
+      "crawling_budget": "80.000",
+      "lookup_key": "enterprise-yearly",
       "freq": "Weekly",
       "ondemand": 6,
       "support": "Support portal",

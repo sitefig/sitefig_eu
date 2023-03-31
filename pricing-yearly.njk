@@ -1,8 +1,5 @@
 ---
-templateClass: tmpl-pricing
-eleventyNavigation:
-  key: Pricing
-  order: 1
+templateClass: tmpl-pricing-yearly
 ---
 {% extends 'layouts/base.njk' %}
 
@@ -13,16 +10,16 @@ eleventyNavigation:
       Pricing
     </h1>
     <h2 class="h2 text-center mx-0 lg:mx-44 py-4">
-      Your site sorted, in no time.
+      Enterprise value, without the price tag.
     </h2>
   </div>
 
   <div class="md:grid md:grid-cols-1 lg:grid-cols-3 md:gap-6 lg:gap-8 mt-10">
 
-    {% set pricing = pricing.plans %}
+    {% set pricing = pricing.yearly %}
     {% include "./_includes/partials/plan.njk" %}
   </div>
-  <h3 class="small h6 text-center underline"><a href="/pricing-yearly">2 month discount with yearly plans</a></h3>
+  <h3 class="small h6 text-center underline"><a href="/pricing">Monthly plans available for short projects</a></h3>
   <div class="flex">
     <div class="mx-auto w-2/3 mt-6">
 
@@ -53,7 +50,7 @@ eleventyNavigation:
           and uptime page</a>.</p>
 
       <h3 class="h5"><strong>How often are updates released, and how are they delivered?</strong></h3>
-      <p>To be notified of updates, please signup for updates on our <a href="https://sitefig.statuspage.io/#">status
+      <p>To be notified of updates, please sign-up for updates on our <a href="https://sitefig.statuspage.io/#">status
           and uptime page</a>.</p>
       <p>Small updates such as bug fixes are delivered on a weekly basis. Major releases happen every 2 months,
         and are announced on LinkedIn and the status page.</p>
@@ -63,7 +60,7 @@ eleventyNavigation:
       <p>Pro and Enterprise customers have access to an additional service such as a 4 day bootcamp to help
         web-teams improve their websites and learn how to use Sitefig .</p>
 
-      <h3 class="h5"><strong>I have anotehr question, now what?</strong></h3>
+      <h3 class="h5"><strong>I have another question, now what?</strong></h3>
       <p>Ask us directly: <a href="mailto:support@sitefig.eu">support@sitefig.eu</a>, we will respond in no time.</p>
 
     </div>
