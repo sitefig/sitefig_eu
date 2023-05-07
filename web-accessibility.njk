@@ -2,61 +2,107 @@
 layout: layouts/page.njk
 ---
 {% block body %}
-  <div class="hero">
+  <div class="hero lg:pt-12">
     <h1 class="h1 text-center text-secondary font-sans font-bold py-4">
-      WCAG Accessibility compliance
+      Make your websites accessible to everyone
     </h1>
     <h2 class="h2 text-center mx-0 lg:mx-44 py-4">
-      Get compliant, stay compliant
+      Accessibility tools for web teams
     </h2>
   </div>
 
   <section class="card hover:shadow-lg">
-    <div class="md:grid md:grid-cols-2 md:gap-4">
+
+    <div class="lg:grid lg:grid-cols-2 lg:gap-4">
       <div>
         {% image "img/web-accessiblity.jpg", "A tree blocking a path in the forest, a metaphor for inaccessible websites." %}
-
       </div>
       <div>
-        <h4 class="text-left">Inaccessible websites are a lot like roadblocks</h4>
-        <p>Roadblocks create barriers that prevent people from accessing important information and resources.</p>
-
-        <p>Just like a physical roadblock can prevent car users from reaching their destination, an inaccessible website
-          can people with disabilities from accessing information and resources that are available online.</p>
-
-        <p>People with disabilities may have to take another path, and rely on assistive technology or seek assistance
-          from others to access the information on an inaccessible website, which can be time consuming and
-          frustrating.</p>
-
-        <p> Making a website accessible means removing these barriers and ensuring that everyone can access and navigate
-          the website easily, regardless of their abilities.</p>
+        <h3 class="text-left">Don't let accessibility become a roadblock</h3>
+        <p>Accessibility should never become a hindrance for website users. Imagine trying to navigate a website without
+          the use of a mouse or the ability to see anything on the screen - this can be a frustrating and isolating
+          experience.</p>
+        <p>To ensure that everyone can access and navigate a website with ease, it's crucial to remove common barriers
+          that may hinder their experience. This means making websites accessible for all, regardless of their
+          abilities.</p>
+      </div>
+      <div>
+        {% image "img/app-sitefig-eu.png", "A screenshot of the color contrast audit, showing an isolated HTML element with contrast ratio and colors." %}
+      </div>
+      <div>
+        <h3 class="text-left">WCAG Compliance is complex and disruptive</h3>
+        <p>However, navigating the complexities of WCAG compliance can be overwhelming. At Sitefig, we understand that
+          accessibility issues should not disrupt your web-team. That's why we provide automated auditing and clear,
+          detailed reports on each issue, along with proper documentation.</p>
+        <p>We have the tools to help you achieve accessibility compliance:
+        <ul class="list-disc list-inside">
+          <li>including accessibility monitoring,</li>
+          <li>automated auditing that can detect up to 60% of issues,</li>
+          <li>accessibility training (in partnership),</li>
+          <li>and full compliance auditing by our partners on-demand.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  {% include "./_includes/partials/trial.njk" %}
+  <section class="card hover:shadow-lg">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-4">
+      <div>
+        {% image "img/shane-rounce-DNkoNXQti3c-unsplash.png", "A tree blocking a path in the forest, a metaphor for inaccessible websites." %}
+      </div>
+      <div>
+        <h3 class="text-left">Get compliant, stay complaint</h3>
+        <p>At Sitefig, we offer a comprehensive range of accessibility tools to help ensure that your website is fully
+          compliant and accessible to everyone. Our automated auditing tool can identify up to 60% of accessibility
+          issues, making it easy to pinpoint and resolve any problems quickly.</p>
+        <p>We also provide ongoing accessibility monitoring to help you stay on top of any potential issues that may
+          arise. With our monitoring service, you can be sure that your website is always accessible and fully compliant
+          with accessibility guidelines.</p>
+      </div>
+      <div>
+        {% image "img/app-sitefig-eu-dashboard.png", "A tree blocking a path in the forest, a metaphor for inaccessible websites." %}
+      </div>
+      <div>
+        <h3 class="text-left">Training and manual auditing</h3>
+        <p>If you need additional support, our team of accessibility partners is available to perform manual auditing
+          and
+          offer expert guidance on accessibility compliance. Our partners can provide full compliance auditing
+          on-demand,
+          ensuring that your website meets all necessary accessibility standards and guidelines.</p>
+        <p>By leveraging these powerful accessibility tools and partnering with our team of experts, you can ensure that
+          your website is fully accessible to all users, regardless of their abilities. Don't let accessibility become a
+          roadblock – let Sitefig help you achieve compliance and make your website accessible to everyone.</p>
       </div>
     </div>
   </section>
 
-  <div class="container md:max-w-2xl mx-auto flex flex-wrap justify-center py-8">
-    <div class="bg-gradient-to-r from-teal to-cyan p-6 rounded text-black text-center ">
-      <a class="h4 block" href="/pricing">
-        Try out sitefig for free, and set up a DEMO account.<br/>
-        <small>(Scan 100 pages for free)</small>
-      </a>
-    </div>
-  </div>
+  {% include "./_includes/partials/trial.njk" %}
 
   <section class="card hover:shadow-lg">
-    <div class="md:grid md:grid-cols-2 md:gap-4">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-4">
       <div>
-        {% image "img/color-contrast.png", "A screenshot of the color contrast audit, showing an isolated HTML element with contrast ratio and colors." %}
+        {% image "img/app-sitefig-eu-failed-audits.png", "A screenshot of the color contrast audit, showing an isolated HTML element with contrast ratio and colors." %}
       </div>
       <div>
-        <h4 class="text-left">Get compliant, stay compliant</h4>
-        <p>Monitoring can be used to ensure that a website stays compliant with various regulations and standards.</p>
-        <p>One way to do this is by setting up monitoring tools to track and alert on specific compliance-related metrics,
-          such as the WCAG 2.1 AA requirements or Accessibility best practices.</p>
-        <p>It is also important to stay up to date on relevant regulations and standards and to have policies and procedures in
-          place to quickly address any compliance issues that are identified through monitoring.</p>
+        <h4 class="text-left">Monitoring</h4>
+        <p>At Sitefig, we recognize that maintaining accessibility compliance is an ongoing effort, which is why we
+          offer a comprehensive monitoring service for your website. Our monitoring service runs automatically,
+          providing you with regular updates on any potential accessibility issues, without requiring any setup or
+          intervention from you.</p>
+        <p>With our monitoring service, you can rest easy knowing that your website is accessible to everyone,
+          regardless of their abilities. Our state-of-the-art tools continuously scan your website for any potential
+          accessibility roadblocks and alert you immediately, so that you can quickly address any concerns.</p>
+
+        <p>Sitefig monitoring in a nutshell:</p>
+        <ul class="list-disc list-inside">
+          <li>weekly monitoring,</li>
+          <li>no setup required,</li>
+          <li>automated accessibility testing for various WCAG levels.</li>
+        </ul>
       </div>
     </div>
   </section>
+
+  {% include "./_includes/partials/trial.njk" %}
 
 {% endblock %}
