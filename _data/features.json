@@ -16,7 +16,7 @@
       "link": "/regular-website-monitoring",
       "sub": "Monthly, weekly and on-demand crawling",
       "p1": "Automatic and scheduled crawls with <span class=\"strong\">private containers</span>.",
-      "p2": "Start an on-demand crawl when a new website is ready, <span class=\"strong\">no waiting inline</span>.",
+      "p2": "Start an on-demand crawls when a new website is ready, <span class=\"strong\">Sitefig starts a cluster for each client</span>.",
       "img": {
         "path": "./img/continuous-on-demand-crawls.png",
         "alt": "Continuous and on-demand crawls"

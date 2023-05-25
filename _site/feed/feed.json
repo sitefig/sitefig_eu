@@ -1,9 +1,9 @@
 {
   "version": "https://jsonfeed.org/version/1.1",
-  "title": "Sitefig - your site sorted",
+  "title": "Sitefig",
   "language": "en",
-  "home_page_url": "https://sitefig.net/",
-  "feed_url": "https://sitefig.net/feed/feed.json",
+  "home_page_url": "https://sitefig.eu/",
+  "feed_url": "https://sitefig.eu/feed/feed.json",
   "description": "Sitefig, your site sorted. Website auditing and monitoring.",
   "author": {
     "name": "",
